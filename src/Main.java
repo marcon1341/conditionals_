@@ -26,6 +26,16 @@ public class Main {
             System.out.println("tea");
         }
     }
+    public static void eat(char hungry){
+        if(hungry == 'Y' || hungry =='y') {
+            System.out.println("I want eat");
+        } else{
+            System.out.println("I don't eat");
+
+        }
+
+    }
+
     public static void main(String[] args){
 
         drink(11);//juice
@@ -33,6 +43,8 @@ public class Main {
         drink(99);//tea
         go(13);
         go(21);
+        eat('y');
+        eat('n');
 
         respond('y');
         respond('N');
