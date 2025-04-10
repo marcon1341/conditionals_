@@ -1,15 +1,41 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void go(int age){
+        if (age >= 18) {
+            System.out.println("go vote!");
+        }else{
+                System.out.println("go play");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
         }
+    }
+
+    public static void respond(char answer){
+        if(answer == 'y' || answer == 'Y') {
+            System.out.println("YUP YUP");
+        }
+        else{
+            System.out.println("NOP NOP NOP");
+        }
+
+    }
+    public static void drink(int age){
+        if(age < 21){
+            System.out.println("juice");
+        }else if(age < 50){
+            System.out.println("adult beverage");
+        }else{
+            System.out.println("tea");
+        }
+    }
+    public static void main(String[] args){
+
+        drink(11);//juice
+        drink(25);//adult beve
+        drink(99);//tea
+        go(13);
+        go(21);
+
+        respond('y');
+        respond('N');
+
     }
 }
